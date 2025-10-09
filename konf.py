@@ -3,6 +3,7 @@ import os
 def exp(a:str):
     for k in os.environ:
         a=a.replace("$"+k,os.environ[k])
+    return
 
 while True:
     a=input("VFS ")
